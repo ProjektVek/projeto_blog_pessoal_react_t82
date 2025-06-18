@@ -40,7 +40,7 @@ function Home() {
         </div>
         <div>
           <img src="https://i.imgur.com/VpwApCU.png
-  " alt="Imagem" className="w-2/3"/>
+          " alt="Imagem" className="w-2/3"/>
         </div>
       </div>
     </div>
