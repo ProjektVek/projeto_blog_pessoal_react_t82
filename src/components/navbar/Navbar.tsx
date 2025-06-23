@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom"
 import Navlink from "../navlink/Navlink"
 function Navbar() {
   return (
     <nav className="flex justify-between text-white bg-indigo-900 pt-8 px-18">
       <div className="">
-        <h1 className="text-2xl font-bold">Blog Pessoal</h1>
+        <Link to="/home"><h1 className="text-2xl font-bold">Blog Pessoal</h1></Link>
       </div>
       <div>
         <ul className="flex gap-4">
