@@ -1,6 +1,19 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import Navlink from "../navlink/Navlink"
+import { useContext } from "react";
+import { AuthContext } from "../../contexts/AuthContext";
 function Navbar() {
+
+  const navigate = useNavigate();
+
+  const { usuario, handleLogout } = useContext(AuthContext);
+
+  function logout() {
+    handleLogout();
+    alert("O usuário foi deslogado com sucesso!");
+    navigate("/");
+  }
+
   return (
     <nav className="flex justify-between text-white bg-indigo-900 pt-8 px-18">
       <div className="">
@@ -12,7 +25,9 @@ function Navbar() {
           <Navlink href="#" texto="Temas"/>
           <Navlink href="#" texto="Cadastrar Tema"/>
           <Navlink href="#" texto="Perfil"/>
-          <Navlink href="#" texto="Sair"/>
+          <Link to="" onClick={logout} className="hover:underline">
+            <Navlink href="#" texto="Sair"/>
+          </Link>
         </ul>
       </div>
     </nav>
