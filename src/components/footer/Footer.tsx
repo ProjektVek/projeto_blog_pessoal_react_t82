@@ -1,18 +1,58 @@
-import { FacebookLogo, InstagramLogo, LinkedinLogo } from "@phosphor-icons/react"
-import { Link } from "react-router-dom"
+import {
+	FacebookLogoIcon,
+	InstagramLogoIcon,
+	LinkedinLogoIcon,
+} from '@phosphor-icons/react'
 
 function Footer() {
-  return (
-    <footer className="flex flex-col items-center justify-center text-white bg-indigo-900 gap-2 py-4 px-18 mt-auto">
-      <h2 className="text-xl font-bold">Blog Pessoal Generation | Copyright: 2025</h2>
-      <h6>Acesse nossas Redes Sociais</h6>
-      <div className="flex gap-2">
-        <Link to="https://www.linkedin.com/"><LinkedinLogo size={48} color="#ffffff" /></Link>
-        <Link to="https://www.instagram.com/"><InstagramLogo size={48} color="#ffffff" /></Link>
-        <Link to="https://www.facebook.com/"><FacebookLogo size={48} color="#ffffff" /></Link>
-      </div>
-    </footer>
-  )
+	const data = new Date().getFullYear()
+
+	return (
+		<>
+			<div className="flex justify-center bg-indigo-900 text-white">
+				<div className="container flex flex-col items-center py-4">
+					<p className="text-xl font-bold">
+						Blog Pessoal Generation | Copyright:{' '}
+						{data}
+					</p>
+					<p className="text-lg">
+						Acesse nossas redes sociais
+					</p>
+					<div className="flex gap-2">
+						<div className="flex gap-2">
+							<a
+								href="https://www.linkedin.com/in/seu_usuario"
+								target="_blank"
+							>
+								<LinkedinLogoIcon
+									size={48}
+									weight="bold"
+								/>
+							</a>
+							<a
+								href="https://www.instagram.com/seu_usuario"
+								target="_blank"
+							>
+								<InstagramLogoIcon
+									size={48}
+									weight="bold"
+								/>
+							</a>
+							<a
+								href="https://www.facebook.com/seu_usuario"
+								target="_blank"
+							>
+								<FacebookLogoIcon
+									size={48}
+									weight="bold"
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</>
+	)
 }
 
 export default Footer
