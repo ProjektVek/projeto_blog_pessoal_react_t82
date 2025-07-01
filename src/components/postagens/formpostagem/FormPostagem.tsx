@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { AuthContext } from "../../../contexts/AuthContext";
 import type Postagem from "../../../models/Postagem";
 import type Tema from "../../../models/Tema";
-import { buscar, atualizar, cadastrar } from "../../../services/Service";
+import { buscar, atualizar, cadastrar } from "../../../services/service";
 import { RotatingLines } from "react-loader-spinner";
 
 function FormPostagem() {

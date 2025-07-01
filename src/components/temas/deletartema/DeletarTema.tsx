@@ -2,7 +2,7 @@ import { useState, useContext, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { AuthContext } from '../../../contexts/AuthContext'
 import type Tema from '../../../models/Tema'
-import { buscar, deletar } from '../../../services/Service'
+import { buscar, deletar } from '../../../services/service'
 import { RotatingLines } from 'react-loader-spinner'
 
 function DeletarTema() {

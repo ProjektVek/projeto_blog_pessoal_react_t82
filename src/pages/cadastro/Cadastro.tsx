@@ -2,7 +2,7 @@ import { useEffect, useState, type ChangeEvent, type FormEvent } from 'react'
 import './Cadastro.css'
 import type Usuario from '../../models/Usuario'
 import { useNavigate } from 'react-router-dom'
-import { cadastrarUsuario } from '../../services/Service'
+import { cadastrarUsuario } from '../../services/service'
 import { RotatingLines } from 'react-loader-spinner'
 
 function Cadastro() {

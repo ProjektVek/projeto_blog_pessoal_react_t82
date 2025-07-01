@@ -2,7 +2,7 @@ import { useState, useContext, type ChangeEvent, type FormEvent, useEffect } fro
 import { useNavigate, useParams } from "react-router-dom"
 import { AuthContext } from "../../../contexts/AuthContext"
 import type Tema from "../../../models/Tema"
-import { atualizar, buscar, cadastrar } from "../../../services/Service"
+import { atualizar, buscar, cadastrar } from "../../../services/service"
 import { RotatingLines } from "react-loader-spinner"
 
 function FormTema() {

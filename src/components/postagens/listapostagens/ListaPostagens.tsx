@@ -3,7 +3,7 @@ import CardPostagens from "../cardpostagens/CardPostagens";
 import { useState, useContext, useEffect } from "react";
 import { AuthContext } from "../../../contexts/AuthContext";
 import type Postagem from "../../../models/Postagem";
-import { buscar } from "../../../services/Service";
+import { buscar } from "../../../services/service";
 import { DNA } from "react-loader-spinner";
 
 function ListaPostagens() {
