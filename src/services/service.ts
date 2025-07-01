@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://blog-pessoal-spring-t82.onrender.com",
+    baseURL: import.meta.env.VITE_API_URL,
     //baseURL: "http://localhost:8080",
 })
 
